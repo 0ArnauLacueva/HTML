@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Checkbox</title>
+</head>
+<body>
+<h1>SELECT</h1>
+
+<h2>Element html select bÃ sic</h2>
+<p>L'etiqueta select serveix per seleccionar entre una llista d'opcions un o mÃ©s Ã­tmens.</p>
+
+<form>
+    <select>
+    </select>
+</form>
+<p>Si es posa aquesta etiqueta, activa una llista desplegable perÃ² no es veu res.</p>
+
+<h2>Etiqueta Option</h2>
+<p>Aquesta etiqueta option afegeix un Ã­tme per poder triar en un menÃº desplegabe. El Select porta l'atribut nama i les etiquetes option i els atributs value.</p>
+
+<form>
+    <label for="languages">Tria els llenguatges web que controlis</label>
+    <select name="llenguatges" id="languages">
+       <option value="html">HTML</option>
+       <option value="ccs">CCS</option>
+       <option value="javascript">Java Script</option>
+    </form>
+</select>
+<p>L'atribut mÃºltiple, es posa dins de l'etiqueta select, ens permet escollir mÃ©s d'una opciÃ³ si apretem la tecla Control.</p>
+<select name="llenguatges" multiple>
+    <option value="html">HTML</option>
+    <option value="ccs">CCS</option>
+    <option value="javascript">JavaScript</option>
+</select>
+
+<h2>Element html select avanÃ§at</h2>
+<p>Podem ordenar els elements mitjanÃ§ant una llista per escollir.</p>
+
+<select name="pets">
+    <optgroup label="Ocells">
+        <option value="pardal">Pardal</option>
+        <option value="cadernera">Cadernera</option>
+    </optgroup>
+    <optgroup label="RÃ¨ptils">
+        <option value="cocodril">Cocodril</option>
+        <option value="serp">Serp</option>
+        <option value="tortuga">Tortuga</option>
+        <option vaue="igualana">Iguana</option>
+    </optgroup>
+    <optgroup label="Mamifers">
+        <option value="bufal">Bufal</option>
+        <option value="lleo">Lleo</option>
+        <option value="guineu">Guineu</option>
+        <option vaue="rinoceront">Rinoceront</option>
+    </optgroup>
+
+</select>
+
+<br><p><a href="../HTML/index.html">Anar a l'index</a></p></br>
+</head>
+</body>

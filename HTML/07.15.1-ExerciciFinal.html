@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="cat">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari</title>
+</head>
+<body>
+    <h1>Formulari de dades</h1>
+
+        <form>
+            <fieldset>
+                <legend>Dades personals</legend>
+                <div><label for="name">Nom</label></div>
+                <input type="text" id="name" required>
+                <div><label for="surname">Cognom</label></div>
+                <input type="text" id="surname" required>
+                <div><label for="text">AdreÃ§a completa</label></div>
+                <input type="text" id="adress"
+                name="adress" required>
+            </fieldset>
+        </form>
+        <br>
+        <form>
+            <fieldset>
+                <legend>GÃ¨nere i Estat civil</legend>
+            <h4>GÃ¨nere</h4>
+                <label>MasculÃ­</label>
+            <input type="radio" name="gender" value="male"  autofocus>    
+            <label>FemenÃ­</label>
+            <input type="radio" name="gender" value="female"  autofocus> 
+        </form> 
+            <h4>Estat civil</h4> 
+            <form>
+                <label for="civil state">Tria el teu estat civil</label>
+                <select name="llenguatges" id="languages">
+                   <option value="single">Solter</option>
+                   <option value="casat">Casat</option>
+                </form>
+            </select>
+        </fieldset>
+        <br>
+    <form>
+        <fieldset>
+            <legend>Data de naixement</legend>
+       <input type="date" asp-format="{0:yyyy-MM-dd}" asp-for="FechaNac">
+        </fieldset>
+    </form>
+    <br>
+    <form>
+        <fieldset>
+            <legend>Correu ElectrÃ²nic</legend>
+        <input type="text"
+    id="email" name="email" placeholder="Introdueix el correu electrÃ²nic"
+    size="60" required>
+    </form>
+</fieldset>
+<br>
+<form>
+    <fieldset>
+        <legend>NÃºmero de telÃ¨fon</legend>
+        <input type="text" id="telephone number" maxlength="9" placeholder="+34...">
+        <input type="reset">
+    </fieldset>
+</form>
+<br>
+<form>
+    <fieldset>
+        <legend>Xarxes Socials</legend>
+        <div><label for="name">Twitter</label></div>
+        <input type="text" id="Twitter" value="@">
+        <div><label for="name">Instagram</label></div>
+        <input type="text" id="Instagram" value="@">
+    </fieldset>
+</form>
+<br>
+<form>
+    <fieldset>
+        <legend>Camp de posiciÃ³</legend>
+        <label for="positions">PreferÃ¨ncia de posiciÃ³ del camp</label>
+        <select name="position" id="position">
+           <option value="defensa central">Defensa Central</option>
+           <option value="lateral">Lateral</option>
+           <option value="migcampista">Migcampista</option>
+           <option value="daventer centre">Davanter centre</option>
+           <option value="extrem">Extrem</option>
+           <option value="porter">Porter</option>
+    </fieldset>
+</form>
+<br>
+<form>
+    <fieldset>
+        <legend>Foto de carnet</legend>
+        <div><label for="image">Puja la teva foto de carnet</label></div>
+    <input type="file" id="image">
+    </fieldset>
+</form>
+<br>
+<form>
+    <fieldset>
+        <legend>Foto de carnet</legend>
+        <div><label for="image">Puja la teva foto de carnet</label></div>
+    <input type="file" id="image">
+    </fieldset>
+</form>
+<br>
+<form>
+    <fieldset>
+        <legend>Color armariet</legend>
+        <label for="colur">Escull el color del teu armariet</label>
+        <input type="color">
+        <input type="reset">
+    </fieldset>
+</form>
+<br>
+<form>
+    <fieldset>
+        <legend>Setmana de viatge final</legend>
+        <label for="text">Escull la setmana per al viatge final de temporada</label>
+        <input type="week">
+    </fieldset>
+</form>
+<br>
+<form>
+    <button>Enviar</button>
+</form>
+</body>
+</html>

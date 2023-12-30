@@ -1,0 +1,105 @@
+<!DOCTYPE html> 
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Text</title>
+</head>
+<body>
+    <h1>Input tipus Text</h1>
+    <p>Ã‰s un tpus d'input per defecte. Si no poseu cap atribut type en un input, tindreu un input de tipus text.</p>
+
+    <h2>Atributs habituals</h2>
+    <p>Es fa servir els segÃ¼ents atributs:</p>
+    <ul typer="circle">
+        <li>Name</li>
+    
+    <p>Quan els usuaris introdueixen informaciÃ³ en un formulari, el servidor necessita saber a quin formulari controla cada tipus de dada introduÃ¯da. Per exemple, en un formulari d'inici de sessiÃ³. Per tant, cada control de formulari requereix un atribut de nom. El valor d'aquest atribut identifica el control de formulari i s'envia juntament amb la informaciÃ³ que introdueix el servidor.</p>
+    <form> Name
+    <input name="name">
+</form>
+<form> Surname
+    <input surname="surname">
+</form>
+</ul>
+    <ul typer="circle">
+        <li>Max lenght</li>
+    
+    <p>S'utilitza per limitar el nombre de carÃ cters que un usuari pot introduir en un camp de text del formulari. El seu valor Ã©s el nombre de carÃ cters que poden introduir. Per exemple, l'any.</p>
+<form>Username
+    <input type="text" id="usernam" maxlenght="10"><br><br>
+</form>
+</ul>
+    <ul typer="circle">
+        <li>Maxlenght</li>
+    </ul>
+    <p>No s'hauria d'utilitzar en formularis nous. S'utilitzaba per indicar l'amplada</p>
+    <form>
+        <input type="text"
+        name="" id=""
+        maxlength="4"
+        size="20">
+    </form>
+
+    <h2>Input size</h2>
+<p>Serveix per medir la grandÃ ria de la caixa</p>
+
+<h2>Atribut value</h2>
+<p>S'utilitza per establir un valor predeterminat en un camp en html. Quan es carregui la pÃ gina, el camp d'entrada de text es mostrarÃ  el valor predeterminat que has establert. Els usuaris poden canviar el valor predeterminat i esciure la seva prÃ²pia informaciÃ³. </p>
+<form>
+    <input type="text"
+    value="2023" id=""
+    maxlength="4" size="35">
+</form>   
+
+<h2>Atribut Playholder</h2>
+<p>Serveix per utilitzar en elements d'entrada de formulari, com el camp, per proporcionar una sugerÃ¨ncia o exemple del que s'espera que l'usuari ingressi en aquell espai.</p>
+<form>
+    <input type="text"
+    id="email"
+    name="email"
+    placeholder="Introduce tu correo electrÃ²nico"
+    size="60">
+</form>
+
+<h2>Atribut pattern</h2>
+<p>Va acompanyat d'una expressiÃ³ regular o regex. Impedeix posar qualsevol text que no sigui el que hem posat en l'expressiÃ³ regular. Quan posem una data o nÃºmero que no hem solÂ·licitat, sortirÃ  una advertÃ¨ncia de que hem d'introduir els valors solÂ·licitats per enviar el form.</p>
+<form>
+    <div>
+        <label
+        for="birthday_year">Any neixement</label>
+    </div>
+    <div>
+        <input type="text"
+        id="birthday_year"
+        name="birthday_year"
+        pattern="[1-2][0-9]{3}$"
+        [12][0123456789]
+        size="40">
+    </div>
+    <div>
+        <button>Enviar</button>
+    </div>
+</form>
+
+<h2>Atribut required</h2>
+<p>Atribut boleÃ . Aquets atrinut fa que la casella s'hagi d'omplir obligarÃ²riament.</p>
+<form>
+    <div>
+        <label
+        for="birthday_year">Any de naixement</label>
+    </div>
+    <div>
+        <input type="text"
+        id="birthday_year"
+        name="birthday_year"
+        required
+        size="40">
+    </div>
+    <div>
+        <button>Enviar</button>
+    </div>
+</form>
+
+<br><p><a href="../HTML/index.html">Anar a l'index</a></p></br>
+<body>

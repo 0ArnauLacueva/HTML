@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datalist</title>
+</head>
+<body>
+<h1>MES ELEMENTS</h1>
+
+<h2>Etiqueta FIELDSET</h2>
+
+<p>S'utilitza per agrupar elements dointre d'un formulari. TÃ© etiqueta d'obertura i tancament. Es fa servir l'etiqueta fieldset i tambÃ© l'etiqueta legend que permet posar un nom al contigut fieldser.</p>
+
+<form>
+    <fieldset>
+        <legend>Dades personals</legend>
+        <div><label for="name">Nom</label></div>
+        <input type="text" id="name">
+        <div><label for="surname">Cognom</label></div>
+        <input type="text" id="surname">
+    </fieldset>
+</form>
+
+<h2>Input tipus FILE</h2>
+<p>Serveix per adjuntar fitxer i enviar-los.</p>
+
+<form>
+    <fieldset>
+        <legend>Dades personals</legend>
+        <div><label for="name">Nom</label></div>
+        <input type="text" id="name">
+        <div><label for="surname">Cognom</label></div>
+        <input type="text" id="surname">
+        <div><label for="image">Puja la teva foto</label></div>
+        <input type="file" id="image">
+    </fieldset>
+</form>
+
+<h2>Etiqueta METER</h2>
+<p>A partir de l'atribut indispensable, value, porta atributs min, max, low, hight i optimum. Serveixen per indicar el nivell de vombustible en aquest cas, que hi ha.</p>
+ 
+<fomr>
+    <label for="fuel">Combustible</label>
+    <meter id="fuel" min="0" max="100" value="90" low="50" hight="90" optimum="25">
+    </meter>
+ </fomr>
+
+ <h1>Etiueta PROGRESS</h1>
+ <p>Crea una barra de progress en funciÃ³ dels atributs value i max. Una bona prÃ ctica Ã©s treballar amb percentatges. Dues barres, una amb mas 200 i l'altre amb 100 i tenen la mateixa longitud.</p>
+
+ <form>
+ <label for="task">Tasca 1</label>
+ <progress id="task" max="100" value="100"></progress>
+ </form>
+ <label for="task">Tasca 2</label>
+ <progress id="task" max="200" value="30"></progress>
+ 
+ <h1>Etiqueta TEXTAREA</h1>
+ <p>Porta els atributs cols i rows amb valors numÃ¨rics.</p>
+<div>
+    <label for="message">Escriu el teu missatge</label>
+</div>
+<textarea name="taula" id="message" cols="50" rows="10"></textarea>
+
+ <br><p><a href="../HTML/index.html">Anar a l'index</a></p></br>
+</body>

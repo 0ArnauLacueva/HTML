@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="cat">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <h1>ENVIAMENT MÃˆTODE GET VS POST</h1>
+ 
+ <p>El mÃ¨tode d'entrada a pÃ gines web quen nosaltres hi entrem a travÃ©s de la url. Poseu l'atribut action amb el valor "enviar html" i l'atribut method amb el valor get.</p>
+
+<h2>Sense atribut name</h2>
+
+<form action="enviar.html" method="get">
+    <label for="name">Nom</label>
+    <input type="text" id="name">
+    <label for="surname">Cognom</label>
+    <input type="text" id="surname">
+    <input type="submit">
+</form>
+<p>Quan no existeix el fitxer que posem l'action ens retorna un error "Cannot GET/enviar.html"</p>
+<p>Malgrat posem el nom i cognom als camps, no s'envia res perquÃ¨ en la url desprÃ©s del ? no hi ha cap informaciÃ³. "http://127.0.0.1:5500/HTML/enviar.html?"</p>
+
+<h2>Amb atribut name</h2>
+<form action="enviar.html" method="get">
+    <label for="name">Nom</label>
+    <input type="text" id="name" name="Arnau">
+    <label for="surname">Cognom</label>
+    <input type="text" id="surname" name="Lacueva">
+    <input type="submit">
+
+<p>Amb els atributs name emplenats, el url aparÃ¨ixen els camps. "http://127.0.0.1:5500/HTML/enviar.html?Arnau=&Lacueva="</p>
+
+<h2>Metode Post</h2>
+<p>Ã«s un enviament del formulari per la porta del radera. L'Error 405 que surt significa que ha intentat enviar les dades perÃ² aquestes no han arribat al destÃ­.</p>
+
+<form action="enviar.html" method="post">
+    <label for="name">Nom</label>
+    <input type="text" id="name" name="nom">
+    <label for="surname">Cognom</label>
+    <input type="text" id="surname" name="cognom">
+    <input type="submit">
+</form>
+
+<p>Inspeccioanant la pagina si enviem el formulari, li donem a la pestanya network i desprÃ©s a la pilot i ho arreglem, un cop tot arreglar, recarreguem la pÃ gina.</p>
+
+<br><p><a href="../HTML/index.html">Anar a l'index</a></p></br>
+</body>
+</html>
