@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../mi-primer-proyecto"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../CSS_novell-basic"
+		},
+		{
+			"path": "../../CSS_nivell-basic"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "HTML"
+	}
+}
